@@ -55,7 +55,8 @@ export const Istorija = () => {
                         <div className="col-8">
                             <h1>Godina</h1>
                             <p>
-                            Treća godina donela je značajan napredak u tehnologiji. Uveli smo novu opremu koja omogućava još brže i sigurnije šlepanje, kao i bolju zaštitu vozila tokom transporta. Takođe, razvili smo sistem za praćenje vozila i obaveštavanje klijenata o statusu njihove usluge, što je povećalo nivo transparentnosti i korisničkog zadovoljstva.
+                                Treća godina donela je značajan napredak u tehnologiji. Uveli smo novu opremu koja omogućava još brže i sigurnije šlepanje, kao
+                                i bolju zaštitu vozila tokom transporta. 
                             </p>
                         </div>
                     </div>
@@ -69,7 +70,10 @@ export const Istorija = () => {
                         <div className="col-8">
                             <h1>Godina</h1>
                             <p>
-                            Četvrta godina bila je ključna u razvoju naše reputacije. Počeli smo da sarađujemo sa velikim firmama i korporacijama koje su nam poveravale transport svojih teretnih vozila. Naši standardi kvaliteta i brze reakcije postali su prepoznatljivi, čime smo stekli verne i stalne klijente. U tom periodu, proširili smo naše usluge i na prevoz opreme za građevinske i industrijske projekte.
+                                Četvrta godina bila je ključna u razvoju naše reputacije. Počeli smo da sarađujemo sa velikim firmama i korporacijama koje su
+                                nam poveravale transport svojih teretnih vozila. Naši standardi kvaliteta i brze reakcije postali su prepoznatljivi, čime smo
+                                stekli verne i stalne klijente. U tom periodu, proširili smo naše usluge i na prevoz opreme za građevinske i industrijske
+                                projekte.
                             </p>
                         </div>
                     </div>
@@ -83,7 +87,9 @@ export const Istorija = () => {
                         <div className="col-8">
                             <h1>Godina</h1>
                             <p>
-                            U petoj godini, naš tim je postao sinonim za kvalitet i sigurnost u industriji šlepanja. Danas, sa proširenom flotom i stručno obučenim osobljem, pružamo kompletnu uslugu prevoza vozila i teških tereta na lokalnom i međugradskom nivou. Naš cilj ostaje isti – da nastavimo da rastemo i pružamo najpouzdaniju pomoć na putu svim našim korisnicima.
+                                U petoj godini, naš tim je postao sinonim za kvalitet i sigurnost u industriji šlepanja. Danas, sa proširenom flotom i stručno
+                                obučenim osobljem, pružamo kompletnu uslugu prevoza vozila i teških tereta na lokalnom i međugradskom nivou. Naš cilj ostaje
+                                isti – da nastavimo da rastemo i pružamo najpouzdaniju pomoć na putu svim našim korisnicima.
                             </p>
                         </div>
                     </div>
@@ -97,7 +103,9 @@ export const Istorija = () => {
                         <div className="col-8">
                             <h1>Godina</h1>
                             <p>
-                            Šestu godinu započinjemo sa novim web sajtom i s ponosom gledamo na 5 godina uspešnog poslovanja, tokom kojih smo izgradili čvrste temelje za još mnogo godina pred nama.</p>
+                                Šestu godinu započinjemo sa novim web sajtom i s ponosom gledamo na 5 godina uspešnog poslovanja, tokom kojih smo izgradili
+                                čvrste temelje za još mnogo godina pred nama.
+                            </p>
                         </div>
                     </div>
                 </div>
