@@ -1,0 +1,73 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.sectionHistory {
+    padding: 150px 0;
+
+    @media (max-width: $lg) {
+        padding: 20px 0;
+    }
+
+    .col-3 {
+        padding-top: 0;
+
+        img {
+            width: 100%;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+        }
+
+        @media (max-width: $lg) {
+            padding-top: 30px;
+            border-left: 3px solid $primary-color;
+        }
+    }
+    .col-1 {
+        padding: 0 20px;
+
+        label {
+            @include font($smooch-sans, 30px, 600);
+            color: $heading-color;
+        }
+
+        @media (max-width: $lg) {
+            border-left: 3px solid $primary-color;
+        }
+    }
+
+    .col-8 {
+        position: relative;
+        border-left: 3px solid $primary-color;
+        padding: 0 0 0 40px;
+
+        &::before {
+            content: '';
+            width: 20px;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $heading-color;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        h1 {
+            @include font($smooch-sans, 30px, 600);
+            color: $heading-color;
+        }
+
+        p {
+            padding-top: 20px;
+            @include font($open-sans, 16px, 600);
+            line-height: 20px;
+            color: $description-color;
+        }
+
+        @media (max-width: $lg) {
+            padding-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.section-services {
+    position: relative;
+    padding: $top 0;
+    background-image: url("/assets/kamion.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 400px;
+
+    @media (max-width: $lg) {
+        padding: 50px 0;
+        background-size:cover;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.95;
+            background-color: #fff;
+            z-index: 1;
+        }
+    }
+
+    .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        h2 {
+            @include font($smooch-sans, $h2-size, 600);
+            text-transform: uppercase;
+            color: gray;
+            letter-spacing: 2px;
+        }
+        h1 {
+            @include font($smooch-sans, $h1-size, 600);
+            text-transform: uppercase;
+            color: $primary-color;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+        }
+    }
+
+    [class^='card-'] {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+
+        img {
+            width: 100px;
+            height: auto;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        .desktop {
+            @media (max-width: $lg) {
+                display: none;
+            }
+        }
+
+        .mobile {
+            display: none;
+
+            @media (max-width: $lg) {
+                display: inline-block;
+            }
+        }
+
+        .content {
+            z-index: 2;
+            h1 {
+                @include font($raleway, 20px, 600);
+                text-transform: uppercase;
+                color: $primary-color;
+            }
+            p {
+                padding-top: 20px;
+                @include font($open-sans, 14px, 500);
+                color: $description-color;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .card-right {
+        h1,
+        p {
+            text-align: end;
+
+            @media (max-width: $lg) {
+                text-align: left;
+            }
+        }
+
+        
+    }
+
+    .col-4:nth-child(2) {
+        @media (max-width:$lg) {
+            display: none;
+        }
+    }
+}

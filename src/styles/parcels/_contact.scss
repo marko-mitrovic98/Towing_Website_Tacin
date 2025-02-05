@@ -1,0 +1,85 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.section-contact {
+    .container {
+        max-width: 100%;
+        padding: 0;
+
+        .col-6 {
+            padding: 0;
+
+            iframe {
+                width: 100%;
+                height: 600px;
+            }
+
+            h1 {
+                @include font($smooch-sans, $h1-size, 400);
+                text-transform: uppercase;
+                color: $primary-color;
+                padding-left: 50px;
+                padding-top: $top;
+
+                span {
+                    font-weight: 700;
+                }
+
+                @media (max-width: $lg) {
+                    padding-top: 50px;
+                }
+            }
+
+            p {
+                @include font($open-sans, 14px, 500);
+                max-width: 75%;
+                line-height: 18px;
+                color: $description-color;
+                padding-left: 50px;
+                padding-top: 10px;
+            }
+
+            h2 {
+                @include font($smooch-sans, $h2-size, 400);
+                text-transform: uppercase;
+                color: $heading-color;
+                padding-left: 50px;
+                padding-top: 50px;
+            }
+
+            ul {
+                padding-left: 50px;
+                padding-top: 15px;
+
+                li {
+                    @include font($open-sans, 16px, 500);
+                    line-height: 18px;
+                    color: $description-color;
+                    padding: 5px 0;
+                    letter-spacing: 0.5px;
+
+                    svg {
+                        color: $primary-color;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .button {
+                display: flex;                
+                justify-content: end;
+                margin-right: 50px;
+
+                .btn {
+                    font-size: 30px;
+
+                    @media (max-width: $lg) {
+                        margin: 50px 0;
+                    }
+                }
+            }
+        }
+    }
+}

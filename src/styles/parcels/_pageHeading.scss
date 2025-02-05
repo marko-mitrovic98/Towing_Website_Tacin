@@ -1,0 +1,18 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.pageHeading {
+    background-image: url("/assets/backgorund.png");
+    margin-top: -100px;
+    padding-top: 100px;
+
+    h1 {
+        padding: 50px 0;
+        text-align: center;
+        @include font($smooch-sans,70px,600);
+        text-transform: uppercase;  
+        letter-spacing: 4px;      
+    }
+}

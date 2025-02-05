@@ -1,0 +1,93 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.section-hero {
+    margin-top: -100px;
+    background-image: url('/assets/towing.webp');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1px 10px #222;
+
+    @media (max-width: $lg) {
+        background-position: -245px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 70%;
+    }
+
+    .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+
+        h2 {
+            padding-top: 250px;
+            @include font($smooch-sans, 130px, 400);
+            color: $background-color;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            @media (max-width: $lg) {
+                padding-top: 150px;
+                text-align: center;
+                font-size: 50px;
+            }
+        }
+
+        h1 {
+            @include font($smooch-sans, 130px, 700);
+            color: $primary-color;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            @media (max-width: $lg) {
+                text-align: center;
+                font-size: 70px;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin-top: 30px;
+            @include font($raleway, 20px, 500);
+            line-height: 26px;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 2.5px;
+
+            @media (max-width: $lg) {
+                font-size: 16px;
+            }
+        }
+
+        .btn {
+            margin-top: 100px;
+            padding: 25px 50px;
+            font-size: 35px;
+
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+            }
+
+            @media (max-width: $lg) {
+                margin-top: 50px;
+                padding: 20px 40px;
+                font-size: 25px;
+                justify-self: flex-end;
+            }
+        }
+    }
+}

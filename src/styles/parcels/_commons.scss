@@ -1,0 +1,41 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.btn {
+    padding: 15px 30px;
+    @include font($raleway, 30px, 400);
+    color: $heading-color;
+    background-color: $primary-color;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $heading-color;
+        color: $primary-color;
+    }
+
+    @media (max-width: $lg) {
+        font-size: 30px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $heading-color;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #fff;
+    }
+}

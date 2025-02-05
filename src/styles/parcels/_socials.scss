@@ -1,0 +1,39 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.socials {
+    z-index: 1111;
+    position: fixed;
+    right: 0;
+    top: 40%;
+//
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    border-radius: 5px 0 0 5px;
+
+    a {
+        text-align: center;
+        padding: 10px;
+        font-size: 40px;
+
+        svg {
+            color: $heading-color;
+        }
+
+        &:hover {
+            background-color: $heading-color;
+            transition: all 0.3s ease;
+
+            svg {
+                color: $primary-color;
+            }
+        }
+
+        @media (max-width:$lg) {
+            font-size: 20px;
+        }
+    }    
+}

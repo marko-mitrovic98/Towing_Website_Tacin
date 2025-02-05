@@ -1,0 +1,30 @@
+@use 'parcels/variables' as *;
+@use 'parcels/mixins' as *;
+@use 'parcels/commons' as *;
+@use 'parcels/grid'  as *;
+@use 'parcels/navbar' as *;
+@use 'parcels/hero' as *;
+@use 'parcels/offer' as *;
+@use 'parcels/stats' as *;
+@use 'parcels/services' as *;
+@use 'parcels/process' as *;
+@use 'parcels/gallery' as *;
+@use 'parcels/contact' as *;
+@use 'parcels/page404' as *;
+@use 'parcels/socials' as *;
+@use 'parcels/pageHeading' as *;
+@use 'parcels/slepSluzba' as *;
+@use 'parcels/footer' as *;
+@use 'parcels/faq' as *;
+@use 'parcels/about' as *;
+@use 'parcels/history' as *;
+@use 'parcels/contactPage' as *;
+@use 'parcels/galleryPage' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background-color;
+}

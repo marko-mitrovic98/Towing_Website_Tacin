@@ -1,0 +1,42 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.sectionAbout {
+    margin: 100px 0;
+
+    .col-6 {
+        display: flex;
+        align-items: center
+    }
+
+    h1 {
+        margin-top: 30px;
+        @include font($smooch-sans, $h1-size, 600);
+        text-transform: uppercase;
+    }
+
+    .rightTitle{
+        text-align: end;
+    }
+
+    hr {
+        border: 1px solid $primary-color;
+    }
+
+    p {
+        @include font($open-sans, 16px, 400);
+        line-height: 20px;
+        color: $description-color;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .leftImg {
+        height: 600px;
+        width: auto;
+    }
+}

@@ -1,0 +1,25 @@
+Header:
+-Home, Slep sluzba, transport, cesta pitanja * o nama, istorija, galerija, kontakt
+Hero:
+-Slogan
+-Dugme za poziv
+Section short descr:
+- Godine iskustva
+- kratko vreme dolaska
+- dostupni uvek i svuda
+
+/
+Section What we offer:
+-slika kamion
+-kratak opis
+Section Asortiman:
+-
+Section Services:
+*sve usluge
+Section Process:
+-pozovi
+-sacekaj
+-prepusti ostalo nama
+Section Gallery
+Section Contact
+Footer

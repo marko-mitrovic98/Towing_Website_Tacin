@@ -1,0 +1,125 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.navbar {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 10px #222;
+    z-index: 1000;
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        align-items: center;
+
+        @media (max-width: $lg) {
+            justify-content: space-between;
+        }
+
+        .navbar-logo {
+            width: auto;
+            height: 100px;
+            padding: 15px 0;
+
+            @media (max-width: $lg) {
+                width: 70px;
+                height: auto;
+                padding: 15px 0;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 25px 0;
+
+            @media (max-width: $lg) {
+                display: none;
+            }
+
+            .navLink {
+                @include font($smooch-sans, 30px, 400);
+                color: white;
+                margin: 0;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 30px 20px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $primary-color;
+                    transition: 0.3s;
+                }
+
+                @media (max-width: $lg) {
+                    padding: 5px;
+                    color: $heading-color;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+
+            &.mobile {
+                overflow-y: scroll;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 80vh;
+                background-color: $primary-color;
+                border-top: 1px solid white;
+                padding: 20px;
+                gap: 20px;
+                
+
+                @media (max-width: $lg) {
+                    display: flex;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+
+            @media (max-width: $lg) {
+                display: flex;
+            }
+
+            span {
+                display: block;
+                height: 3px;
+                width: 25px;
+                background-color: $primary-color;
+            }
+
+            &.open {
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+
+                span:nth-child(1) {
+                    transform: rotate(45deg) translateY(11px);
+                }
+
+                span:nth-child(3) {
+                    transform: rotate(-45deg) translateY(-11px);
+                }
+            }
+        }
+    }
+}

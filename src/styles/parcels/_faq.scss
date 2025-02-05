@@ -1,0 +1,52 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+.section-faq {
+
+    .accordion {
+        width: 100%;
+        margin: 100px 0;
+
+        .accordion-item {
+            border-bottom: 3px solid $background-color;
+
+            .accordion-header {
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                background: $primary-color;
+
+                h3,
+                span {
+                    @include font($raleway, 20px, 400);
+                    color: $heading-color;
+                    padding: 20px;
+                }
+            }
+
+            .accordion-content {
+                background-color: $heading-color;
+                display: none;
+
+                p {
+                    width: 100%;
+                    @include font($raleway, 20px, 400);
+                    line-height: 22px;
+                    letter-spacing: 0.5px;
+                    color: $description-color;
+                    padding: 20px;
+
+                    @media (max-width: $lg) {
+                        font-size: 16px;
+                    }
+                }
+
+                &.active {                    
+                    display: block;
+                }
+            }
+        }
+    }
+}

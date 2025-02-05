@@ -1,0 +1,82 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'commons' as *;
+@use 'grid' as *;
+
+footer {
+    background-color: $heading-color;
+    .col-4 {
+        @media (max-width: $lg) {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        padding: 50px 0;
+        img {
+            height: 100px;
+        }
+
+        p {
+            padding: 20px 0;
+            @include font($open-sans, 12px, 400);
+            line-height: 16px;
+            color: $description-color;
+        }
+
+        a {
+            padding-right: 30px;
+            text-decoration: none;
+            color: $description-color;
+            //font-size: 20px;
+
+            &:hover {
+                color: $primary-color;
+
+                svg {
+                    color: #fff;
+                }
+            }
+
+            svg {
+                color: $primary-color;                
+            }
+
+            @media (max-width: $lg) {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+        }
+
+
+    }
+
+    .col-12 {
+        h1 {
+            @include font($smooch-sans, 25px, 300);
+            color: #fff;
+            text-transform: uppercase;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        hr {
+            border: 1px solid $primary-color;
+        }
+    }
+
+    ul {
+        //padding: 20px 0;
+
+        li {
+            padding: 10px 0;
+            color: $description-color;
+            @include font($open-sans,14px,400);
+            svg {
+                color: $primary-color;
+                padding-right: 7px;
+            }
+        }
+    }
+}
