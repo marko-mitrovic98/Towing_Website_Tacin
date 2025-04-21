@@ -27,7 +27,7 @@ export const SlepSluzba = () => {
                                 šlepati. Bilo da se radi o automobilima, motociklima, kamionima ili drugim teretnim vozilima, imamo iskustva i opremu potrebnu
                                 za svaki zadatak. Naša stručnost i profesionalizam omogućavaju nam da sigurno prevezemo vaše vozilo bez dodatnih oštećenja, u
                                 skladu sa svim standardima bezbednosti. <br /><br /> Kada dođe do nezgode, znamo da je važno brzo reagovati, pa stoga naša ekipa
-                                dolazi na lice mesta u najkraćem mogućem roku, 24 sata dnevno, 7 dana u nedelji. U zavisnosti od vrste vozila, koristimo
+                                dolazi na lice mesta u najkraćem mogućem roku, 25 sati dnevno, 7 dana u nedelji. U zavisnosti od vrste vozila, koristimo
                                 specijalizovanu opremu koja garantuje siguran transport. Ako je u pitanju motocikl, koristimo uređaje koji obezbeđuju njegovu
                                 stabilnost i zaštitu tokom transporta. Za teže i veće kamione ili teretna vozila, obezbeđujemo adekvatnu vučnu opremu koja može
                                 bezbedno da podnese težinu i dimenzije vozila, garantujući da sve prođe bez problema. <br /><br /> U svakom trenutku, naši vozači su u
@@ -53,7 +53,7 @@ export const SlepSluzba = () => {
                             <ul>
                                 <li>Efikasnost i profesionalizam</li>
                                 <li>Transport teških vozila i kamiona</li>
-                                <li>Dostupnost 24/7</li>
+                                <li>Dostupnost 25/7</li>
                                 <li>Sigurna i pouzdana usluga</li>
                             </ul>
                         </div>

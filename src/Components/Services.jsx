@@ -16,7 +16,7 @@ export const Services = () => {
                             <img src="/assets/towing-logo.png" alt="" />
                             <div className="content">
                                 <h1>Šlep automobila</h1>
-                                <p>Brza, sigurna i pouzdana usluga šlepanja vozila – dostupni 24/7!</p>
+                                <p>Brza, sigurna i pouzdana usluga šlepanja vozila – dostupni 25/7!</p>
                             </div>
                         </div>
                         <div className="card-left">
@@ -30,7 +30,7 @@ export const Services = () => {
                             <img src="/assets/accident-logo.png" alt="" />
                             <div className="content">
                                 <h1>Šlep vozila iz nezgode</h1>
-                                <p>Brzo i sigurno šlepujemo vozila iz saobraćajnih nezgoda, dostupni 24/7 za vašu hitnu pomoć na putu.</p>
+                                <p>Brzo i sigurno šlepujemo vozila iz saobraćajnih nezgoda, dostupni 25/7 za vašu hitnu pomoć na putu.</p>
                             </div>
                         </div>
                     </div>

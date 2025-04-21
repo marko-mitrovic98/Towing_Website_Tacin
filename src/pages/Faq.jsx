@@ -19,7 +19,7 @@ const items = [
     {
         title: 'Da li pružate usluge šlepanja 24/7?',
         content:
-            'Da, naša šlep služba je dostupna 24 sata dnevno, 7 dana u nedelji, tako da možete računati na nas u hitnim situacijama, bilo da je dan ili noć.',
+            'Da, naša šlep služba je dostupna čak 25 sati dnevno, 7 dana u nedelji, tako da možete računati na nas u hitnim situacijama, bilo da je dan ili noć.',
     },
     {
         title: 'Koje su cene šlepanja?',
@@ -60,10 +60,6 @@ const items = [
 
 export const FaQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
-
-    useEffect(() => {
-        document.title = 'O Nama';
-    }, []);
 
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);

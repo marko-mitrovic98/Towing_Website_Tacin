@@ -12,17 +12,17 @@ export const Stats = () => {
                     </div>
                     <div className="col-3">
                         <img src="/assets/watch.png" alt="" />
-                        <h1>24/7</h1>
+                        <h1>25/7</h1>
                         <span>Dostupnost</span>
                     </div>
                     <div className="col-3">
                         <img src="/assets/truckIcon.png" alt="" />
-                        <h1>303</h1>
+                        <h1>15</h1>
                         <span>Dostupnih vozila</span>
                     </div>
                     <div className="col-3">
                         <img src="/assets/people.png" alt="" />
-                        <h1>303> </h1>
+                        <h1>3000> </h1>
                         <span>Zadvoljnih klijenata</span>
                     </div>
                 </div>

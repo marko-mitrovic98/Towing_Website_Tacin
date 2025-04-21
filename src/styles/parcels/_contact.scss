@@ -68,7 +68,7 @@
             }
 
             .button {
-                display: flex;                
+                display: flex;
                 justify-content: end;
                 margin-right: 50px;
 
@@ -82,4 +82,17 @@
             }
         }
     }
+}
+
+.swal2-popup {
+    background-color: $heading-color !important;
+}
+.swal2-title {
+    @include font($smooch-sans, $h2-size, 400);
+    color: $primary-color;
+}
+.swal2-confirm {
+    background-color: $primary-color !important;
+    color: $heading-color !important;
+    border-radius: 8px !important;
 }

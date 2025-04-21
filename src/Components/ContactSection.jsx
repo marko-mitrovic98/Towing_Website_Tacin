@@ -24,7 +24,7 @@ export const ContactSection = () => {
                             <ul>
                                 <li><i className="fa-solid fa-location-dot"></i> Barske Pruge 86, 11550 Lazarevac</li>
                                 <li><i className="fa-solid fa-phone"></i> 069/48 81 395</li>
-                                <li><i className="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                                <li><i className="fa-solid fa-envelope"></i> ssmtacin@gmail.com</li>
                             </ul>
                             <div className="button">
                                 <Link to="/kontakt" className="btn">Kontaktiraj nas</Link>

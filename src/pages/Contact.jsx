@@ -3,16 +3,36 @@ import { Navbar } from '../Components/Navbar';
 import { Socials } from '../Components/Socilas';
 import { PageHeading } from '../Components/PageHeading';
 import { Footer } from '../Components/Footer';
+import Swal from 'sweetalert2'
 
 export const Contact = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const [result, setResult] = React.useState('');
 
-    const toggleError = () => {
-        setIsVisible(true);
-    };
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult('Sending....');
+        const formData = new FormData(event.target);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+        formData.append('access_key', '25dc0c7f-25f1-4a8b-9ec8-d2610de29af2');
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData,
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            Swal.fire({
+                title: "Uspešno poslata poruka!",
+                icon: "success"
+              });
+            setResult('Form Submitted Successfully');
+            event.target.reset();
+        } else {
+            console.log('Error', data);
+            setResult(data.message);
+        }
     };
 
     return (
@@ -34,7 +54,7 @@ export const Contact = () => {
                                 Kontakt <span>Forma</span>
                             </h1>
                             <hr />
-                            <form action="submit" onSubmit={handleSubmit}>
+                            <form action="submit" onSubmit={onSubmit}>
                                 <input type="text" id="name" name="name" placeholder="Ime i Prezime" required />
 
                                 <input type="email" id="email" name="email" placeholder="E-mail" required />
@@ -45,10 +65,9 @@ export const Contact = () => {
 
                                 <textarea id="message" name="message" placeholder="Tekst Poruke" required />
 
-                                <button type="submit" className="btn" onClick={toggleError}>
+                                <button type="submit" className="btn">
                                     Pošalji
                                 </button>
-                                {isVisible && <div className='errorMsg'>Greška na serveru, poruka nije poslata.</div>}
                             </form>
                         </div>
                         <div className="col-4">
@@ -64,10 +83,10 @@ export const Contact = () => {
                                     <i className="fa-solid fa-phone"></i> 069/48 81 395
                                 </li>
                                 <li>
-                                    <i className="fa-solid fa-envelope"></i> Email@gmail.com
+                                    <i className="fa-solid fa-envelope"></i> ssmtacin@gmail.com
                                 </li>
                                 <li>
-                                    <i class="fa-regular fa-clock"></i> 24 sata, 7 dana u nedelji
+                                    <i class="fa-regular fa-clock"></i> 25 sati, 7 dana u nedelji
                                 </li>
                             </ul>
                         </div>

@@ -26,7 +26,7 @@ export const GallerySection = () => {
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <Link to="/gallery" class="btn">
+                        <Link to="/galerija" class="btn">
                             Sve slike
                         </Link>
                     </div>

@@ -93,10 +93,10 @@ export const Footer = () => {
                                             <i className="fa-solid fa-phone"></i> 069/48 81 395
                                         </li>
                                         <li>
-                                            <i className="fa-solid fa-envelope"></i> Email@gmail.com
+                                            <i className="fa-solid fa-envelope"></i> ssmtacin@gmail.com
                                         </li>
                                         <li>
-                                            <i class="fa-regular fa-clock"></i> 24 sata, 7 dana u nedelji
+                                            <i class="fa-regular fa-clock"></i> 25 sati, 7 dana u nedelji
                                         </li>
                                     </ul>
                                 </div>
