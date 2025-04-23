@@ -4,18 +4,52 @@
 @use "grid" as *;
 
 .section-hero {
+    position: relative;
     margin-top: -100px;
-    background-image: url("/assets/backgorund.png");
+    background-color: $primary-color;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 1px 10px #222;
+    z-index: 1;
 
     @media (max-width: $lg) {
         background-position: -245px;
         height: auto;
     }
+
+    .section-hero__background-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+      
+      .section-hero__background {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
+
+        @media (max-width: 768px) {
+              object-position: 80% center; 
+            
+          }
+      }
+      
+      .fade-in .section-hero__background {
+        opacity: 1;
+      }
+      
+      .fade-out .section-hero__background {
+        opacity: 0;
+      }
+      
 
     // &::after {
     //     content: '';
