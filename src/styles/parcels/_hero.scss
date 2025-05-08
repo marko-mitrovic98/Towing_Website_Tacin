@@ -51,18 +51,18 @@
       }
       
 
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: #000000;
-    //     opacity: 70%;
-    // }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        opacity: 80%;
+    }
 
-    .col-6 {
+    .col-12 {
         display: flex;
         flex-direction: column;
         z-index: 1;
@@ -83,7 +83,7 @@
 
         h1 {
             @include font($smooch-sans, 130px, 700);
-            color: $heading-color;
+            color: $primary-color;
             text-transform: uppercase;
             letter-spacing: 5px;
 
@@ -112,12 +112,11 @@
             padding: 25px 50px;
             font-size: 35px;
             align-self: flex-start;
-            background-color: #222;
-                color: $primary-color;
+            background-color: $primary-color;
+                color: #222;
 
             &:hover {
                 background-color: #fff;
-                color: $primary-color;
             }
 
             @media (max-width: $lg) {
@@ -174,7 +173,7 @@
 
         .slider-controls {
             align-self: center;
-
+            z-index: 999;
             display: flex;
             gap: 1rem;
 

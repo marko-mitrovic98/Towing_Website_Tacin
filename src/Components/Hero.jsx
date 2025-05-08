@@ -1,29 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import background1 from '../assets/images/backgorund-1.png';
-import background2 from '../assets/images/backgorund-2.png';
-import background3 from '../assets/images/backgorund-3.png';
+import background1 from '../assets/images/background-1.jpg';
+import background2 from '../assets/images/background-2.jpg';
+import background3 from '../assets/images/background-3.jpg';
+import background4 from '../assets/images/background-4.jpg';
 
 const slides = [
     {
         title: 'Šlep služba',
         heading: 'Tacin',
         text: 'Nosivost do 60t',
-        image: '/assets/hero1.png',
         background: background1,
     },
     {
         title: 'Dostupni',
         heading: '25/7',
         text: 'Spremni da odgovorimo na poziv bilo kada i bilo gde.',
-        image: '/assets/hero2.png',
         background: background2,
     },
     {
         title: 'Iskustvo',
         heading: 'Sigurnost',
         text: 'Naš tim profesionalaca obezbeđuje siguran i bezbedan transport vašeg vozila.',
-        image: '/assets/hero3.png',
         background: background3,
+    },
+    {
+        title: 'Pouzdanost',
+        heading: 'Brza reakcija',
+        text: 'Naša ekipa stiže brzo na lice mesta i rešava problem efikasno.',
+        background: background4, 
     },
 ];
 
@@ -65,7 +69,7 @@ export const Hero = () => {
 
             <div className="container">
                 <div className="row">
-                    <div className={`col-6 slide-text ${isAnimating ? 'slide-out' : 'slide-in'}`}>
+                    <div className={`col-12 slide-text ${isAnimating ? 'slide-out' : 'slide-in'}`}>
                         <h2>{title}</h2>
                         <h1>{heading}</h1>
                         <p>{text}</p>
@@ -73,11 +77,11 @@ export const Hero = () => {
                             Pozovite nas!
                         </a>
                     </div>
-                    <div className="col-6">
-                        <div className={`section-hero__image ${isAnimating ? 'image-slide-out' : 'image-slide-in'}`}>
+                    {/* <div className="col-6">
+                    <div className={`section-hero__image ${isAnimating ? 'image-slide-out' : 'image-slide-in'}`}>
                             <img src={image} alt={heading} />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="row">
                     <div className="col-12">
